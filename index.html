@@ -87,22 +87,24 @@
             <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Form Icon">
         </span>
         <h2>Тестова форма</h2>
-        <p class="info">Повідомлення буде відправлено на: <strong>shelkoblako01@gmail.com</strong></p>
+        <p class="info">Повідомлення буде відправлено на: <strong>6weeks.13h@gmail.com</strong></p>
 
-        <form action="https://formsubmit.co/shelkoblako01@gmail.com" method="POST">
+        <form action="https://formsubmit.co/6weeks.13h@gmail.com" method="POST">
             <label>Ім'я (необов'язково):</label>
             <input type="text" name="name">
 
             <label>Email (обов'язково):</label>
-            <input type="email" name="email" required>
+            <input type="email" name="email" required placeholder="example@gmail.com">
 
             <label>Повідомлення (необов'язково):</label>
             <textarea name="message" rows="5"></textarea>
 
-            <button type="submit">Відправити</button>
-
-            <!-- Отключаем CAPTCHA -->
+            <!-- Тема листа -->
+            <input type="hidden" name="_subject" value="6weeks - Форма заповнена">
+            <!-- Вимкнути CAPTCHA -->
             <input type="hidden" name="_captcha" value="false">
+
+            <button type="submit">Відправити</button>
         </form>
     </div>
 </body>
